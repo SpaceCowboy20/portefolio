@@ -67,11 +67,12 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .background {
-  height: 120vh;
+  height: 110vh;
   background-image: url("https://wallpapercave.com/wp/vu7LnbC.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   filter: blur(8px);
 }
 
