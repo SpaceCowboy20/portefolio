@@ -30,9 +30,9 @@ html {
 }
 .textbox {
   text-align: center;
-  border-radius: 30px 30px 0px 0px;
+  border-radius: 3px;
   border: 2px solid rgba(255, 255, 255, 0.3);
-  padding: 1rem;
+  padding: 1rem 3rem 1rem 3rem;
   background: rgba(255, 255, 255, 0.57);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(7px);
@@ -66,8 +66,13 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   width: 1.5rem;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .background {
-  height: 110vh;
+  height: 115vh;
   background-image: url("https://wallpapercave.com/wp/vu7LnbC.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -163,4 +168,63 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   transform: scale(1.08);
   background: rgba(255, 255, 255, 0.581);
   cursor: pointer;
+}
+
+.notif {
+  height: 4rem;
+  width: 16rem;
+  border: 2px solid green;
+  background-color: yellowgreen;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: brown;
+}
+
+.notif-icon {
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  left: 5px;
+  color: green;
+}
+
+#notif-on {
+  visibility: visible;
+  animation: fadeIn 0.5s, fadeOut 0.5s 1.5s;
+}
+
+#notif-off {
+  visibility: hidden;
+}
+
+@keyframes fadeIn {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 10px;
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  from {
+    bottom: 10px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
 }

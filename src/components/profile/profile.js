@@ -9,7 +9,7 @@ export default function Profile() {
       </div>
       <div className="borderpp">
         <div className="cadre-pp">
-          <img src={require("../imgs/pp.jpg")} alt="" className="pp" />
+          <img src={require("../../imgs/pp.jpg")} alt="" className="pp" />
         </div>
       </div>
     </div>
