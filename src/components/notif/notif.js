@@ -17,7 +17,12 @@ const Notif = forwardRef((props, ref) => {
     <div className="notif" id={notif ? "notif-on" : "notif-off"}>
       <BsIcons.BsCheck2Circle className="notif-icon" />
       Copied to clipboard
-      <AiIcons.AiFillCloseCircle className="close" />
+      <AiIcons.AiFillCloseCircle
+        className="close"
+        onClick={() => {
+          setNotif(false);
+        }}
+      />
     </div>
   );
 });
