@@ -29,5 +29,10 @@ export const data = [
   { id: 6, title: "Spotify", icon: BsIcons.BsSpotify },
   { id: 7, title: "Apple", icon: BsIcons.BsApple },
   { id: 8, title: "Fiverr", icon: SiIcons.SiFiverr },
-  { id: 5, title: "CV", icon: BsIcons.BsFillFilePdfFill },
+  {
+    id: 5,
+    title: "CV",
+    icon: BsIcons.BsFillFilePdfFill,
+    link: "pp.jpg",
+  },
 ];
