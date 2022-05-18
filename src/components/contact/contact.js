@@ -18,6 +18,7 @@ export default function Contact({ notifRef }) {
         className="icon"
         onClick={() => {
           navigator.clipboard.writeText("houloulou#7271");
+          notifRef.current.show();
         }}
       >
         <SiIcons.SiDiscord className="contactIcons discord" />
