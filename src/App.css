@@ -11,11 +11,18 @@ html {
 
 .profile {
   display: flex;
+  position: relative;
+  top: 0;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 5rem;
 }
 .borderpp {
+  position: absolute;
+  left: 50%;
+  top: -50%;
+  transform: translateX(-50%);
   height: 12rem;
   width: 12rem;
   border: 2px solid rgba(255, 255, 255, 0.3);
@@ -30,13 +37,22 @@ html {
 }
 .textbox {
   text-align: center;
-  border-radius: 3px;
+  position: relative;
+  height: 150px;
+  border-radius: 20px;
   border: 2px solid rgba(255, 255, 255, 0.3);
   padding: 1rem 3rem 1rem 3rem;
   background: rgba(255, 255, 255, 0.57);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(7px);
-  margin-top: 5rem;
+  transform: translateY(-10rem);
+  transition: 0.6s;
+}
+
+.textbox:hover {
+  height: 350px;
+
+  transform: translateY(5rem);
 }
 
 /*
@@ -50,6 +66,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 5rem;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -228,3 +245,6 @@ a {
     opacity: 0;
   }
 }
+
+/* let try making position absolute and zindex on hover 
+instead of making it height increase */
