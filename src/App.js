@@ -7,10 +7,16 @@ import Notif from "./components/notif/notif";
 
 function App() {
   let notifRef = useRef(null);
-
+  //get an api key
+  //let image = fetch("https://api.pexels.com/v1/");
   return (
     <div className="App">
-      <div className="background" />
+      <div
+        className="background"
+        style={{
+         // backgroundImage: `url("${image}")`,
+        }}
+      />
       <div className="content">
         <Profile />
         <Elementcontainer />
