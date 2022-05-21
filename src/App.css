@@ -68,7 +68,6 @@ html {
   height: 450px;
 }
 
-
 /*
 border-radius: 16px;
 -webkit-backdrop-filter: blur(7px);
@@ -259,5 +258,4 @@ a {
   }
 }
 
-/* let try making position absolute and zindex on hover 
-instead of making it height increase */
+/* correct textbox width and on focus stay bigsize*/
