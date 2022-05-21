@@ -11,17 +11,18 @@ html {
 
 .profile {
   display: flex;
+  height: 20rem;
+  width: 20rem;
   position: relative;
   top: 0;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  margin-top: 5rem;
+  margin-top: 1rem;
 }
 .borderpp {
   position: absolute;
   left: 50%;
-  top: -50%;
+  right: 50%;
+  top: -5rem;
   transform: translateX(-50%);
   height: 12rem;
   width: 12rem;
@@ -30,29 +31,40 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
   background: rgba(255, 255, 255, 0.57);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(7px);
 }
 .textbox {
   text-align: center;
-  position: relative;
+  position: absolute;
   height: 150px;
   border-radius: 20px;
   border: 2px solid rgba(255, 255, 255, 0.3);
-  padding: 1rem 3rem 1rem 3rem;
+  padding: 8rem 3rem 1rem 3rem;
   background: rgba(255, 255, 255, 0.57);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(7px);
-  transform: translateY(-10rem);
   transition: 0.6s;
+  background-color: red;
+}
+
+.textbox h1,
+.textbox h4 {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.textbox:hover h1,
+.textbox:hover h4 {
+  visibility: visible;
+  opacity: 1;
+  transition: 1s;
 }
 
 .textbox:hover {
   height: 350px;
-
-  transform: translateY(5rem);
 }
 
 /*
@@ -70,6 +82,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-color: aquamarine;
 }
 .icons {
   float: right;
@@ -116,7 +129,6 @@ a {
   width: 29rem;
   padding: 0.5rem;
   padding-right: 2rem;
-  margin-top: 2rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
