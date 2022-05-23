@@ -6,7 +6,7 @@ export default function Profile() {
       <div className="textbox" tabIndex="0">
         <div className="borderpp">
           <div className="cadre-pp">
-            <img src={require("../../imgs/pp.jpg")} alt="" className="pp" />
+            <img src={require("../../imgs/pp2.jpg")} alt="" className="pp" />
           </div>
         </div>
         <h1>Housseine FELLAHI</h1>

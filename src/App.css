@@ -12,7 +12,7 @@ html {
 .profile {
   display: flex;
   height: 11rem;
-  width: 20rem;
+  width: 26rem;
   position: relative;
   top: 0;
   flex-direction: column;
@@ -21,12 +21,10 @@ html {
 
 .borderpp {
   position: absolute;
-  left: 50%;
-  right: 50%;
-  top: -5rem;
-  transform: translateX(-50%);
-  height: 12rem;
-  width: 12rem;
+  top: -3rem;
+  left: 10rem;
+  height: 6rem;
+  width: 6rem;
   border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 50%;
   display: flex;
@@ -35,35 +33,65 @@ html {
   background: rgba(255, 255, 255, 0.57);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(7px);
+  transition: 0.4s;
 }
 .textbox {
   text-align: center;
   position: absolute;
   height: 150px;
+  width: 26rem;
   border-radius: 20px;
   border: 2px solid rgba(255, 255, 255, 0.3);
   padding: 8rem 3rem 1rem 3rem;
   background: rgba(255, 255, 255, 0.57);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(7px);
-  transition: 0.6s;
+  transition: 0.4s;
   z-index: 2;
 }
+.textbox h1 {
+  position: absolute;
+  top: 4rem;
+  transition: 0.4s;
+}
+.textbox:hover h1 {
+  position: absolute;
+  top: 5rem;
+  transition: 0.4s;
+}
+.textbox:focus h1 {
+  position: absolute;
+  top: 5rem;
+  transition: 0.4s;
+}
 
-.textbox h1,
+.textbox:focus .borderpp {
+  height: 12rem;
+  width: 12rem;
+  top: -6rem;
+  left: 7rem;
+}
+.textbox:focus .cadre-pp {
+  height: 10rem;
+  width: 10rem;
+}
+
+.textbox:focus .pp {
+  height: 11rem;
+  width: auto;
+}
+
 .textbox h4 {
   visibility: hidden;
   opacity: 0;
   transition: 0.4s;
 }
 
-.textbox:hover h1,
 .textbox:hover h4 {
   visibility: visible;
   opacity: 1;
   transition: 1s;
 }
-.textbox:focus h1,
 .textbox:focus h4 {
   visibility: visible;
   opacity: 1;
@@ -122,16 +150,33 @@ a {
 }
 
 .pp {
-  height: 15rem;
-  width: auto;
-  transform: translateX(-18px);
   transform: translateY(-18px);
+  height: 7rem;
+  width: auto;
+  transition: 0.4s;
 }
 .cadre-pp {
-  height: 10rem;
-  width: 10rem;
+  height: 5rem;
+  width: 5rem;
   border-radius: 50%;
   overflow: hidden;
+  transition: 0.4s;
+}
+.textbox:hover .cadre-pp {
+  height: 10rem;
+  width: 10rem;
+}
+
+.textbox:hover .borderpp {
+  height: 12rem;
+  width: 12rem;
+  top: -6rem;
+  left: 7rem;
+}
+
+.textbox:hover .pp {
+  height: 11rem;
+  width: auto;
 }
 
 .container {
