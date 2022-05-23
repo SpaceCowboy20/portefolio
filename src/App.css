@@ -63,8 +63,18 @@ html {
   opacity: 1;
   transition: 1s;
 }
+.textbox:focus h1,
+.textbox:focus h4 {
+  visibility: visible;
+  opacity: 1;
+  transition: 1s;
+}
 
 .textbox:hover {
+  height: 450px;
+}
+
+.textbox:focus {
   height: 450px;
 }
 
@@ -258,4 +268,4 @@ a {
   }
 }
 
-/* correct textbox width and on focus stay bigsize*/
+/* correct textbox width */

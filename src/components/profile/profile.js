@@ -3,7 +3,7 @@ import React from "react";
 export default function Profile() {
   return (
     <div className="profile">
-      <div className="textbox">
+      <div className="textbox" tabIndex="0">
         <div className="borderpp">
           <div className="cadre-pp">
             <img src={require("../../imgs/pp.jpg")} alt="" className="pp" />
