@@ -28,7 +28,12 @@ export const data = [
   },
   { id: 6, title: "Spotify", icon: BsIcons.BsSpotify },
   { id: 7, title: "Apple", icon: BsIcons.BsApple },
-  { id: 8, title: "Fiverr", icon: SiIcons.SiFiverr },
+  {
+    id: 8,
+    title: "Fiverr",
+    icon: SiIcons.SiFiverr,
+    link: "https://fr.fiverr.com/s2/515589478a",
+  },
   {
     id: 5,
     title: "CV",
